@@ -43,6 +43,7 @@ yarn-error.log*
 .idea/astra.iml
 .idea/inspectionProfiles/
 .idea/modules.xml
+.idea/.gitignore
 
 
 # Mongo Explorer plugin:

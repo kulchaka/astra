@@ -1,4 +1,4 @@
-# https://github.com/kulchaka/astra-model
+# https://github.com/kulchaka/astra
 
 
 - Astra Model APP
@@ -8,7 +8,7 @@ you can see Name and Price elements, and Total count.
 
 You can also see an example by following the link below:
 
-#### https://kulchaka.github.io/astra-model/
+#### https://kulchaka.github.io/astra
 
 - this project uses: HTML&CSS, GIT, ReactJS, MaterializeCSS
 
