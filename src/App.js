@@ -21,25 +21,32 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Total: {state.length}</h1>
       {
         loader
           ?
           (
-            <ul className="collection with-header">
-              {state.slice(0, 50).map(e => {
-                return <li className="collection-item" key={e.attributes.code}>
-                  <div>{e.attributes.name}
-                    <div href="#!" className="secondary-content">
-                      <div>{e.attributes.czk} CZK</div>
+            <>
+              <h1>Total: {state.length}</h1>
+              <ul className="collection with-header">
+                {state.slice(0, 50).map(e => {
+                  return <li className="collection-item" key={e.attributes.code}>
+                    <div>{e.attributes.name}
+                      <div href="#!" className="secondary-content">
+                        <div>{e.attributes.czk} CZK</div>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              })}
-            </ul>
+                  </li>
+                })}
+              </ul>
+            </>
           )
           :
-          (<Preloader/>)
+          (
+            <>
+              <h1>Loading...</h1>
+              <Preloader/>
+            </>
+          )
       }
     </div>
   );
